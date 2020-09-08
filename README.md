@@ -1,24 +1,36 @@
-# README
+# Evently App
+## Powered by Ruby on Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This application is a part of an individual project for a Software Design and Development class, focusing on web development.
+Evently is a social media platform where individuals can easily create and share events to any and everyone.
 
-Things you may want to cover:
+🚧 This application is still under development. Stay tuned for more! 🚧
 
-* Ruby version
+## Getting started
 
-* System dependencies
+To get started with the app, clone the repo and then install the needed gems:
 
-* Configuration
+```
+$ bundle install --without production
+```
 
-* Database creation
+Next, migrate the database:
 
-* Database initialization
+```
+$ rails db:migrate
+```
 
-* How to run the test suite
+Finally, run the test suite to verify that everything is working correctly:
 
-* Services (job queues, cache servers, search engines, etc.)
+```
+$ rails test
+```
 
-* Deployment instructions
+If the test suite passes, you'll be ready to run the app in a local server:
 
-* ...
+```
+$ rails server
+```
+
+For more information, see the
+[*Ruby on Rails Tutorial* book](https://www.railstutorial.org/book).
