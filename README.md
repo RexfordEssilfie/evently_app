@@ -2,8 +2,10 @@
 ## Powered by Ruby on Rails
 
 This application is a part of an individual project for a Software Design and Development class, focusing on web development.
+
 Evently is a social media platform where individuals can easily create and share events to any and everyone.
 
+## Homework Level: 1/8
 🚧 This application is still under development. Stay tuned for more! 🚧
 
 ## Getting started
