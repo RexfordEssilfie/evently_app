@@ -1,0 +1,10 @@
+<% provide(:title, "Random Verse")%>
+<h1 class="small-title">Bible Verse Generator</h1>
+<div class="divider"></div>
+
+<div class="verse-container">
+    <%random_verse = get_random_verse%>
+    <h1 class="verse"><%= random_verse[:content]%></h1>
+    <h2 class="location"><%= random_verse[:location]%></h2>
+</div>
+<div class="divider"></div>
