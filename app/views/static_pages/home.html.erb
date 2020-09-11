@@ -1,4 +1,14 @@
-<h1>Evently App</h1>
-<p>This is the home page for the <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>
-    sample application.
-</p>
+<div class="center jumbotron">
+    <h1>Welcome to the Evently App</h1>
+    <h2>
+        Create events, invite others and discover new events!
+    </h2>
+
+    <p> This is the home page for Evently, an app made using the <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>. Enjoy!</p>
+
+    <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
+</div>
+
+<%= link_to image_tag("rails.svg", alt: "Rails logo", width: "200"),
+                      "https://rubyonrails.org/" %>
+<%#= image_tag("kitten.jpg", alt: "Some cat")%>
