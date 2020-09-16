@@ -30,6 +30,9 @@ class SiteLayoutTest < ActionDispatch::IntegrationTest
 
     get dynamic_path
     assert_select "title", full_title("Random Verse")
+
+    get signup_path
+    assert_select "title", full_title("Sign Up")
   end
 
 end
