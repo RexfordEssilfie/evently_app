@@ -1,0 +1,5 @@
+﻿name,email,password,password_confirmation
+John Doe,john@doe.com,foobar,foobar
+Anne Doe,anne@doe.com,foobar,foobar
+Hillary Jane,hillary@jane.com,foobar,foobar
+Peter King,peter@king.com,foobar,foobar
