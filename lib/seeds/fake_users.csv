@@ -1,5 +1,5 @@
-﻿name,email,password,password_confirmation
-John Doe,john@doe.com,foobar,foobar
-Anne Doe,anne@doe.com,foobar,foobar
-Hillary Jane,hillary@jane.com,foobar,foobar
-Peter King,peter@king.com,foobar,foobar
+﻿id,name,email,password
+0,John Doe,john@doe.com,foobar
+1,Anne Doe,anne@doe.com,foobar
+2,Hillary Jane,hillary@jane.com,foobar
+3,Peter King,peter@king.com,foobar
