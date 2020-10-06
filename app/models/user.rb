@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-    has_many :events
+    has_many :events, :class_name => "Event"
 
     before_save { self.email = email.downcase } # Call this callback to downcase all emails before saving (same as self.email = self.email.downcase). Using bang email.downcase!
     validates :name, presence: true, length: { maximum: 50}
