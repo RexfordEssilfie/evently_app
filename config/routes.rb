@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :events
+  resources :users
   get 'users/new'
   root 'static_pages#home'
   get  '/home',    to: 'static_pages#home'
@@ -7,5 +9,4 @@ Rails.application.routes.draw do
   get  '/contact', to: 'static_pages#contact'
   get '/dynamic', to: 'static_pages#dynamic'
   get '/signup', to: 'users#new'
-  resources :users
 end
