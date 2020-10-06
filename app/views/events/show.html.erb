@@ -1,29 +1,51 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @event.name %>
-</p>
+<div class="event-header">
 
-<p>
-  <strong>Description:</strong>
-  <%= @event.description %>
-</p>
+<div class="event-header-content">
 
-<p>
-  <strong>Start time:</strong>
-  <%= @event.start_time %>
-</p>
 
-<p>
-  <strong>End time:</strong>
-  <%= @event.end_time %>
-</p>
+ <div class="calendar-icon-container"> <%= image_tag  "calendar.svg", class: 'calendar-icon' %> </div>
+  
+  <span>
+    <h1 class="event-title">
+      <%= @event.name %>
+    </h1>
 
-<p>
-  <strong>Visibility:</strong>
-  <%= @event.visibility %>
-</p>
+    <h4>
+      <strong>Hosted by:</strong>
+      <%= @event.user.name %>
+    </h4>
+  </span>
 
+</div>
+
+</div>
+
+<div class="container">
 <%= link_to 'Edit', edit_event_path(@event) %> |
 <%= link_to 'Back', events_path %>
+
+<div class="event-section">
+  <h2>Description</h2>
+  <p> <%= @event.description %> </p>
+</div>
+
+
+<div class="event-section">
+  <h2>Start Time</h2>
+  <p> <%= @event.start_time %> </p>
+</div>
+
+
+<div class="event-section">
+  <h2>End Time</h2>
+  <p> <%= @event.end_time %> </p>
+</div>
+
+<div class="event-section">
+  <h2>Visibility</h2>
+  <p> <%= @event.visibility || 'Public' %> </p>
+</div>
+
+</div>
