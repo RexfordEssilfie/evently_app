@@ -1,0 +1,8 @@
+<%= link_to event_path(locals[:event]), class: "event-list-item" do %>
+        <h3> <%= locals[:event].name%> </h3>
+        <p class="light-text"><%=locals[:event].description%></p>
+        <p>Starts <%=locals[:event].start_time%></p>
+        <p>Ends <%=locals[:event].end_time%></p>
+        <p>Hosted by <%=locals[:event].user.name%></p>
+<% end %>
+
