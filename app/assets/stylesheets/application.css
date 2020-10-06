@@ -13,3 +13,22 @@
  *= require_tree .
  *= require_self
  */
+
+
+
+@font-face {
+    font-family: 'Nunito-Regular';
+    src: url('Nunito/Nunito-Regular.ttf')
+  }
+  
+  @font-face {
+    font-family: 'Nunito-SemiBold';
+    src: url('Nunito/Nunito-SemiBold.ttf')
+  }
+  
+  
+  @font-face {
+    font-family: 'Nunito-Bold';
+    src: url('Nunito/Nunito-Bold.ttf')
+  }
+  
