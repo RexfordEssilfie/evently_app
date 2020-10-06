@@ -13,9 +13,14 @@
     </div>
   <% end %>
 
+<div class="field">
+    <%= form.label "Your Email" %>
+    <%= form.text_field :email,  class: "form-control"%>
+  </div>
+
   <div class="field">
-    <%= form.label :name %>
-    <%= form.text_area :name,  class: "form-control"%>
+    <%= form.label "Event Name" %>
+    <%= form.text_field :name,  class: "form-control"%>
   </div>
 
   <div class="field">
