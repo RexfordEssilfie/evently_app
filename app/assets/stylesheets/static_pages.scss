@@ -1,3 +1,91 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    box-sizing: border-box;
+}
+
+
+.tagline{
+    margin-top: 20px;
+    color: #E54500;
+    font-family: 'Nunito-SemiBold';
+    font-size: 2em;
+    margin-bottom: 50px;
+}
+
+.hero-img{
+    width: 350px;
+}
+
+.hero-buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:center;
+    height: 20vh;
+}
+
+.orange{
+    color: #E54500;
+}
+
+.cta{
+    font-size: 1.5em;
+    color: #E54500;
+    padding: 8px 24px;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: #E54500;
+    border-style: solid;
+    background-color: white;
+
+
+    &:hover{
+        background-color: #E54500;
+        color: white;
+        text-decoration: none;
+        transition:  .2s;
+        transition-timing-function: ease-in-out;
+    }
+}
+
+.my-navbar{
+    background-color: #E54500;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-bottom: none;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+
+    .my-nav li a{
+        color: white;
+        font-size: 1.1em;
+
+        &:hover{
+            text-decoration: underline;
+            transition: .4s;
+        }
+    }
+}
+
+#logo{
+    float: left;
+    width: 80px;
+    margin-top: 1em;
+}
+
+
+.home-section{
+    padding-top: 2em;
+    border-top: solid 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5em;
+}

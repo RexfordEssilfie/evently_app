@@ -1,8 +1,6 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-
-
 /* mixins, variables, etc. */
 
 $gray-medium-light: #eaeaea;
@@ -17,6 +15,15 @@ $gray-medium-light: #eaeaea;
 
 body {
   padding-top: 60px;
+  font-family: 'Nunito-Regular';
+  height: 100%;
+  width: 100%;
+  font-size: 15px;
+  margin: 0 auto;
+}
+
+.site-wrapper{
+  min-height: 80vh;
 }
 
 section {
@@ -38,6 +45,7 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
+  font-family: 'Nunito-SemiBold'
 }
 
 h1 {
@@ -48,12 +56,8 @@ h1 {
 }
 
 h2 {
-  font-size: 1.2em;
   letter-spacing: -1px;
   margin-bottom: 30px;
-  text-align: center;
-  font-weight: normal;
-  color: $gray-light;
 }
 
 p {
@@ -65,14 +69,7 @@ p {
 /* header */
 
 #logo {
-  float: left;
-  margin-right: 10px;
-  font-size: 1.7em;
   color: white;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  padding-top: 9px;
-  font-weight: bold;
   &:hover {
     color: white;
     text-decoration: none;
@@ -107,14 +104,10 @@ footer {
 
 
 /* dynamic page*/
-.small-title{
-  font-size: 2.4em;
-  font-weight: 500;
-}
-
 .divider{
-  height: 15px;
-  background-color: black;
+  height: 1px;
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 100px;
 }
 
 .verse-container{
@@ -203,4 +196,9 @@ input {
   .form-control {
     color: $state-danger-text;
   }
+}
+
+
+.img-small{
+  width: 100px;
 }

@@ -1,0 +1,13 @@
+ <header class="navbar navbar-fixed-top navbar-inverse my-navbar">
+     <div class="container">
+         <%= link_to image_tag("evently_logo.svg", :id => "logo"), root_path%>
+         <nav>
+             <ul class="nav navbar-nav navbar-right my-nav">
+                 <li><%= link_to "Home", root_path %></li>
+                 <li><%= link_to "Dynamic", dynamic_path %></li>
+                 <li><%= link_to "Help", help_path %></li>
+                 <li><%= link_to "Log in", '#' %></li>
+             </ul>
+         </nav>
+     </div>
+ </header>
