@@ -1,13 +1,14 @@
+
+<div class="container">
 <div class="center hero-section">
     <%= image_tag  "evently_white_black.svg", :class => "hero-img"%>
     <h2 class="tagline"> Create, Invite, Discover </h2>
 
     <div class="hero-buttons">
         <%= link_to "Sign Up", signup_path, :class => "cta" %>
+        <%= link_to "Create Event", new_event_path, :class => "cta" %>
         <%= link_to "Browse Events", events_path, :class => "cta" %>
     </div>
-    
-
 </div>
 <div class="home-section">
     <h2>What is Evently?</h2>
@@ -27,3 +28,6 @@
 </div>
 
 <div style="margin-bottom:20em;"></div>
+
+
+</div>
