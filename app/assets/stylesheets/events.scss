@@ -31,6 +31,11 @@
     justify-content: space-evenly;
 }
 
+.date-select-group{
+    display: flex;
+    flex-direction: row;
+}
+
 .event-list-item{
     border: solid rgba(0,0,0,0.2) 1px;
     color: black;

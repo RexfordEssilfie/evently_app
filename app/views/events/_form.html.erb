@@ -24,28 +24,37 @@
         </div>
 
         <div class="field">
+            <%= form.label "Location (or Video Conferencing Link)" %>
+            <%= form.text_field :location,  class: "form-control"%>
+        </div>
+
+        <div class="field">
             <%= form.label :description %>
             <%= form.text_area :description,  class: "form-control" %>
         </div>
 
-        <div class="field">
+         <div class="field">
             <%= form.label :start_time %>
-            <%= form.time_select :start_time, { prompt: {hour: 'Choose hour', minute: 'Choose minute'}, minute_step: 15 }, { class: 'form-control' } %>
+            <div class="date-select-group">
+                <%= form.datetime_select :start_time, { prompt: {day: 'Day', month: 'Month', year: 'Year', hour: 'Hour', minute: 'Minute'}, minute_step: 10, ampm: true, use_two_digit_numbers: false}%>
+            </div>
         </div>
 
         <div class="field">
             <%= form.label :end_time %>
-            <%= form.time_select :end_time, { prompt: {hour: 'Choose hour', minute: 'Choose minute'}, minute_step: 15 }, { class: 'form-control' } %>
+            <div class="date-select-group">
+                <%= form.datetime_select :end_time, { prompt: {day: 'Day', month: 'Month', year: 'Year', hour: 'Hour', minute: 'Minute'}, minute_step: 10, ampm: true, use_two_digit_numbers: false}%>
+            </div>
         </div>
 
         <div class="field">
             <%= form.label :visibility %>
 
             <div class="radio-btn-group">
-            <span><%= form.radio_button :visibility, 'public', class:'radio-btn'  %> Public </span><br/>
-            <span><%= form.radio_button :visibility, 'private', class:'radio-btn' %> Private </span><br/>
+                <span><%= form.radio_button :visibility, 'public', class:'radio-btn'  %> Public </span><br />
+                <span><%= form.radio_button :visibility, 'private', class:'radio-btn' %> Private </span><br />
             </div>
-            
+
         </div>
 
         <%= form.submit "Create Event", class: "cta" %>
