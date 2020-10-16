@@ -30,6 +30,7 @@ class EventsController < ApplicationController
 
     if user.nil?
       @event = Event.new(event_params) # this will cause it to fail since user is expected
+      @event.errors.add(:email, "does not exist")
     else
       @event = user.events.new(event_params)
       if !user.authenticate user_params[:password]
