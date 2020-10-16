@@ -4,7 +4,7 @@
 
 .events-list{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
     margin-top: 5vh;
@@ -41,6 +41,7 @@
     color: black;
     border-radius: 24px;
     padding: 20px;
+    min-height: 310px;
     width: 500px;
     margin-right: 32px;
     margin-bottom: 32px;
