@@ -5,12 +5,12 @@
     <h1>Browse Events</h1>
 
     <%= render 'browse_instructions'%>
-    
+
     <p class='num-events'>Number of events: <%= pluralize(@events.length, 'event')%></p>
-        <div class="center">
+    <div class="center">
         <%= link_to '➕Add New Event', new_event_path%>
     </div>
-    
+
     <div class="events-list">
 
 
