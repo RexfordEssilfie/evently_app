@@ -4,9 +4,16 @@
 
 .events-list{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     flex-wrap: wrap;
     margin-top: 5vh;
+}
+
+.num-events{
+    font-size: 1.4em;
+    color: #E54500;
+    text-align: center;
 }
 
 .event-list-item{
