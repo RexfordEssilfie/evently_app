@@ -3,7 +3,11 @@
 <div class="container">
     <h1>Community</h1>
 
-    <div class="users-list">
+    <div style="display:flex; justify-content:center">
+        <p style="text-align:center; width:70vw; font-size:1.2em">Welcome to the Evently community. Browse through the list of users. Find someone you know? Click their profile to see what events they're up to!</p>
+    </div>   
+   
+   <div class="users-list">
         <%if @users.length==0%>
         <p class="center">No users yet. Sign up to create an account!</p>
         <% end%>

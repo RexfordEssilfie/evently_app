@@ -1,6 +1,5 @@
 <%= link_to user_path(locals[:user]), class: "user-card" do %>
-        <h3> <%= locals[:user].name%> </h3>
-        <p class="light-text"><%=locals[:user].email%></p>
-        <p class="light-text"> Joined at <%=locals[:user].created_at%></p>
+<h3 style="margin-top:0.2em"> <%= locals[:user].name%> </h3>
+<p class="light-text"><%=locals[:user].email%></p>
+<p class="light-text"> Joined at <%=locals[:user].created_at%></p>
 <% end %>
-
