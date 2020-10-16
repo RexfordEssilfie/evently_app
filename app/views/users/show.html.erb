@@ -1,5 +1,6 @@
 <% provide(:title, @user.name) %>
 <div class="container">
+    <%= link_to 'Back', users_path %>
     <div class="row user-header">
         <%= gravatar_for @user %>
         <section class="user-info">
