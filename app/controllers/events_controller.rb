@@ -25,10 +25,22 @@ class EventsController < ApplicationController
   # POST /events.json
   def create
     user = User.find_by(email: user_params[:email])
-    @event = user.events.new(event_params)
+    user_has_correct_pass = false
+   
+
+    if user.nil?
+      @event = Event.new(event_params) # this will cause it to fail since user is expected
+    else
+      @event = user.events.new(event_params)
+      if !user.authenticate user_params[:password]
+        @event.errors.add(:password, "is invalid")
+      else
+        user_has_correct_pass = true
+      end
+    end
 
     respond_to do |format|
-      if @event.save
+      if user_has_correct_pass && @event.save
         format.html { redirect_to @event, notice: 'Event was successfully created.' }
         format.json { render :show, status: :created, location: @event }
       else
@@ -74,6 +86,6 @@ class EventsController < ApplicationController
     end
 
     def user_params
-      params.require(:event).permit(:email)
+      params.require(:event).permit(:email, :password)
     end
 end
