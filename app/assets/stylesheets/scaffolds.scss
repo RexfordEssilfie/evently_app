@@ -2,7 +2,8 @@
 
 div.field,
 div.actions {
-  margin-bottom: 10px; }
+  margin-bottom: 10px; 
+}
 
 #notice {
   color: green; }
@@ -10,10 +11,10 @@ div.actions {
 .field_with_errors {
   padding: 2px;
   background-color: red;
-  display: table; }
+  border-radius: 4px;
+}
 
 #error_explanation {
-  width: 450px;
   border: 2px solid red;
   padding: 7px 7px 0;
   margin-bottom: 20px;
