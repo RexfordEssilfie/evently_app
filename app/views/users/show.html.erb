@@ -1,15 +1,31 @@
 <% provide(:title, @user.name) %>
 <div class="container">
-<div class="row">
-    <aside class="col-md-4">
-        <section class="user_info">
-            <h1>
-                <%= gravatar_for @user %>
-                <%= @user.name %>
-            </h1>
+    <div class="row user-header">
+        <%= gravatar_for @user %>
+        <section class="user-info">
+            <h2 style="margin-top:0; margin-bottom:0.2em"><%= @user.name %></h2>
+            <p style="text-align: center"><%=@user.email%></p>
             <p style="text-align: center"> Joined at <%=@user.created_at%></p>
         </section>
-    </aside>
-</div>
+    </div>
+
+    <div>
+        <h2>Events by <%=@user.name%></h2>
+
+        <p class='num-events'>Number of events: <%= pluralize(@events.length, 'event')%></p>
+    <div class="center">
+        <%= link_to '➕Add New Event', new_event_path%>
+    </div>
+
+    <div class="events-list">
+        <%if @events.length==0%>
+        <p class="center">No events added yet. Create one for others to see!</p>
+        <% end%>
+
+        <% @events.each do |event|%>
+        <%= render 'events/event_list_item', :locals => {event: event} %>
+        <% end%>
+    </div>
+    </div>
 
 </div>
