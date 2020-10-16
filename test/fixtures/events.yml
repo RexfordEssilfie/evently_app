@@ -1,15 +1,22 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  name: MyText
-  description: MyText
+event_one:
+  name: Event 1
+  description: Description 1
+  location: Location 1
   start_time: 2020-10-05 20:30:38
   end_time: 2020-10-05 20:30:38
-  visibility: MyText
+  location: Location 1
+  visibility: Public
+  user: user_one
 
-two:
-  name: MyText
-  description: MyText
+
+event_two:
+  name: Event 2
+  description: Description 2
+  location: Location 2
   start_time: 2020-10-05 20:30:38
   end_time: 2020-10-05 20:30:38
-  visibility: MyText
+  location: Location 2
+  visibility: Private
+  user: user_two
