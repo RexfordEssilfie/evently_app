@@ -1,10 +1,27 @@
 <div class="container">
-<% provide(:title, "Help") %>
-<h1>Help</h1>
-<p>
-    Get help on the Ruby on Rails Tutorial at the
-    <a href="https://www.railstutorial.org/help">Rails Tutorial Help page</a>.
-    To get help on this sample app, see the
-    <a href="https://www.railstutorial.org/book">Ruby on Rails Tutorial bood</a>.
-</p>
+    <% provide(:title, "Help") %>
+    <h1>Help</h1>
+    <p>Here's a list of short FAQ's to help you get started with Evently.</p>
+
+    <div style="margin-top:2em">
+        <h3>1. How do I sign up?</h3>
+        <p>Click <%= link_to "Sign Up", new_user_path %> in the navigation bar and fill out basic personal information to join the platform!</p>
+
+        <h3>2. Do I need to sign up to create an event?</h3>
+        <p>Short answer, yes! Signing up first helps us to keep track of the events you have created for easy identification by you and other members in the community!</p>
+
+        <h3>3. How do I create an event?</h3>
+        <p>To create an event, click <%= link_to "Events", events_path %> in the navigation bar. Right below the instructions for the page, you will see an 'Add Event' button which you may click to fill out a form to add your event!</p>
+        
+        <h3>4. How can I see all the events I have created?</h3>
+        <p>To see the events you have created, you will need to access your profile. To do so, click <%= link_to "Community", users_path %> in the navigation bar, scroll through the alphabetically ordered list of users until you spot your name (and email), and then click to view your events! Pro tip: you can see events other users have created by doing something similar, but this timme clicking on their name instead!</p>
+
+        <h3>5. How can I see all the events on the platform?</h3>
+        <p>Simply click <%= link_to "Events", events_path %> in the navigation bar and you're good to go!</p>
+
+        <h3>6. How do I log in?</h3>
+        <p>Trick question! You do not need to log in. To see your events, simply go to <%= link_to "Community", users_path %> find your name from the alphabetical list of users and click to see youur profile and events!</p>
+
+
+    </div>
 </div>
