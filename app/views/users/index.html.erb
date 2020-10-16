@@ -6,12 +6,13 @@
     <div style="display:flex; justify-content:center">
         <p style="text-align:center; width:70vw; font-size:1.2em">Welcome to the Evently community. Browse through the list of users. Find someone you know? Click their profile to see what events they're up to!</p>
     </div>   
-   
-   <div class="users-list">
-        <%if @users.length==0%>
-        <p class="center">No users yet. Sign up to create an account!</p>
+   <%if @users.length==0%>
+        <p class="center">No users yet. <%= link_to "Sign Up", new_user_path %> to create an account!</p>
+        <%else %>
+        <span class="center" style="font-size:1.2em; margin-top:2em"><%= link_to "Join community 🙌", new_user_path %></span>
         <% end%>
 
+   <div class="users-list">
         <% @users.sort_by {|user| user.name}.each do |user|%>
         <%= render 'user_card', :locals => {user: user} %>
         <% end%>
