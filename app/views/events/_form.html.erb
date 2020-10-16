@@ -40,7 +40,12 @@
 
         <div class="field">
             <%= form.label :visibility %>
-            <%= form.text_area :visibility,  class: "form-control" %>
+
+            <div class="radio-btn-group">
+            <span><%= form.radio_button :visibility, 'public', class:'radio-btn'  %> Public </span><br/>
+            <span><%= form.radio_button :visibility, 'private', class:'radio-btn' %> Private </span><br/>
+            </div>
+            
         </div>
 
         <%= form.submit "Create Event", class: "cta" %>
