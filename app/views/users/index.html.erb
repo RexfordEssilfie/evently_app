@@ -1,0 +1,16 @@
+<% provide(:title, 'Community') %>
+
+<div class="container">
+    <h1>Community</h1>
+
+    <div class="users-list">
+        <%if @users.length==0%>
+        <p class="center">No users yet. Sign up to create an account!</p>
+        <% end%>
+
+        <% @users.sort_by {|user| user.name}.each do |user|%>
+        <%= render 'user_card', :locals => {user: user} %>
+        <% end%>
+    </div>
+
+</div>
