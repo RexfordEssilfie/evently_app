@@ -1,4 +1,4 @@
-id,name,location,description,start_time,end_time,user_id, visibility
+id,name,location,description,start_time,end_time,user_id,visibility
 1,'Virtual Tic-Tac-Toe Day 1','JRC 101','Come battle it out for the Grinnell tick-tack-toe championship in the qualifiers round.','09/06/2020 20:00','09/06/2020 21:00',1,public
 2,'Virtual Tic-Tac-Toe Day 2','JRC 102','Come battle it out for the Grinnell tick-tack-toe championship in the semi finals round.','09/06/2020 20:00','09/07/2020 21:00',2,public
 3,'Virtual Tic-Tac-Toe Day 3','JRC 103','Come battle it out for the Grinnell tick-tack-toe championship in the finals round.','09/06/2020 20:00','09/08/2020 21:00',3,private
