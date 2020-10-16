@@ -35,12 +35,13 @@ csv = CSV.parse(csv_events_text, :force_quotes => true, :headers => true, :quote
 csv.each do |row|
   name = row['name']
   description = row['description']
+  location = row['location']
   start_time = row['start_time']
   end_time = row['end_time']
   visibility = row['visibility']
   user_id = row['user_id']
 
-  e= Event.new({name: name, description: description, start_time: start_time, end_time: end_time, visibility: visibility, user_id: user_id})
+  e= Event.new({name: name, description: description, location: location, start_time: start_time, end_time: end_time, visibility: visibility, user_id: user_id})
   puts e.inspect
   e.save!
   puts e.errors.full_messages
