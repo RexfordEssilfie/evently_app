@@ -1,22 +1,29 @@
 <div class="container">
 
-<p id="notice"><%= notice %></p>
+    <p id="notice"><%= notice %></p>
 
-<h1>Browse Events</h1>
-<div class="events-list">
-<%if @events.length==0%>
-  <p class="center">No events added yet. Create one for others to see!</p>
-<% end%>
+    <h1>Browse Events</h1>
 
-  <% @events.each do |event|%>
-    <%= render 'event_list_item', :locals => {event: event} %>
-  <% end%>
-</div>
+    <%= render 'browse_instructions'%>
+    
+    <p class='num-events'>Number of events: <%= pluralize(@events.length, 'event')%></p>
+        <div class="center">
+        <%= link_to '➕Add New Event', new_event_path%>
+    </div>
+    
+    <div class="events-list">
 
-<br>
 
-<div class="center">
-<%= link_to '➕Add New Event', new_event_path%>
-</div>
+        <%if @events.length==0%>
+        <p class="center">No events added yet. Create one for others to see!</p>
+        <% end%>
+
+        <% @events.each do |event|%>
+        <%= render 'event_list_item', :locals => {event: event} %>
+        <% end%>
+    </div>
+
+
+    <br>
 
 </div>
