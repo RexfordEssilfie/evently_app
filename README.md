@@ -5,8 +5,8 @@ This application is a part of an individual project for a Software Design and De
 
 Evently is a social media platform where individuals can easily create and share events to any and everyone.
 
-## Homework Completed: 7/8
-🚧 This application is still under development. Stay tuned for more! 🚧
+## Homework Completed: 8/8 🎉
+This project is now considered complete for all CSC-324 class intents and purposes!
 
 ## Getting started
 
