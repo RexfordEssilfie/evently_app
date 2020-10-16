@@ -18,17 +18,21 @@
     font-family: 'Nunito-SemiBold';
     font-size: 2em;
     margin-bottom: 50px;
+    line-height: 1.4;
 }
 
 .hero-img{
-    width: 350px;
+    max-width: 350px;
+    width: 60vw;
+    min-width: 240px;
 }
 
 .hero-buttons{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items:center;
+    flex-wrap: wrap;
     height: 10vh;
 
     .cta{
@@ -43,7 +47,7 @@
 .cta{
     font-size: 1.5em;
     color: #E54500;
-    padding: 8px 24px;
+    padding: 8px 16px;
     border-radius: 10px;
     border-width: 2px;
     border-color: #E54500;
@@ -102,6 +106,21 @@
 
 @media all and (max-width:768px){
    .my-navbar {
+       position: relative;
        flex-direction: column;
+       margin-bottom: -10px;
+   }
+
+   .cta{
+       font-size: 1.2em;
+   }
+
+   .tagline{
+       font-size: 1.6em;
+   }
+
+   .hero-section{
+       min-height: 70vh;
+       margin-top:-100px;
    }
 }
