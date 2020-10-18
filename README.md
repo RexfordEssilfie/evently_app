@@ -3,7 +3,7 @@
 
 This application is a part of an individual project for a Software Design and Development class, focusing on web development.
 
-Evently is a social media platform where individuals can easily create and share events to any and everyone.
+Evently is a social platform where individuals can easily create and share events to any and everyone.
 
 ## Homework Completed: 8/8 🎉
 This project is now considered complete for all CSC-324 class intents and purposes!
